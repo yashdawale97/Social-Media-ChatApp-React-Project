@@ -1,7 +1,7 @@
 import Post from "../Post/Post";
 import Share from "../Share/Share";
 import "./Feed.css";
-import { Posts } from "../../dummyData";
+import { Posts } from "../data/dummyData";
 
 const Feed = () => {
   return (

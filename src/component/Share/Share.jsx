@@ -11,7 +11,7 @@ const Share = () => {
       <div className="shareWrapper">
         <div className="shareTop">
           <img
-            src="/assets/person/1.jpeg"
+            src={require("../data/Images/person/1.jpeg")}
             alt="Profile"
             className="shareProfileImg"
           />

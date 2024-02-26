@@ -1,6 +1,6 @@
 import { BsThreeDotsVertical } from "react-icons/bs";
 import "./Post.css"
-import { Users } from "../../dummyData";
+import { Users } from "../data/dummyData";
 import { useState } from "react";
 
 const Post =({post})=>{
@@ -32,8 +32,8 @@ const Post =({post})=>{
             </div>
             <div className="postBottom">
                 <div className="postBottomLeft">
-                    <img src="assets/like.png" alt="Like" className="likeIcon"onClick={clickLikeHandler} />
-                    <img src="assets/heart.png" alt="heart" className="likeIcon" />
+                    <img src={require("../data/Images/like.png")} alt="Like" className="likeIcon"onClick={clickLikeHandler} />
+                    <img src={require("../data/Images/heart.png")} alt="heart" className="likeIcon" />
                     <span className="postLikeCounter" >{like} people like it</span>
                 </div>
                 <div className="postBottomRight">

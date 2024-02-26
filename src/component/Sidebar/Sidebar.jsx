@@ -4,7 +4,7 @@ import { FaBookmark ,FaQuestion,FaVideo,FaLayerGroup} from "react-icons/fa";
 import { IoBagRemove } from "react-icons/io5";
 import { GiGraduateCap } from "react-icons/gi";
 import "./sidebar.css"
-import { Users } from "../../dummyData";
+import { Users } from "../data/dummyData";
 import Closefriend from "../closeFriends/Closefriend"
 
 const Sidebar =()=>{

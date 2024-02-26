@@ -1,5 +1,5 @@
 import "./Rightbar.css";
-import { Users } from "../../dummyData";
+import { Users } from "../data/dummyData";
 import Online from "../online/Online";
 
 export default function Rightbar({ profile }) {
@@ -7,12 +7,12 @@ export default function Rightbar({ profile }) {
     return (
       <>
         <div className="birthdayContainer">
-          <img className="birthdayImg" src="assets/gift.png" alt="" />
+          <img className="birthdayImg" src={require("../data/Images/gift.png")} alt="Gift" />
           <span className="birthdayText">
             <b>Pola Foster</b> and <b>3 other friends</b> have a birhday today.
           </span>
         </div>
-        <img className="rightbarAd" src="assets/ad.png" alt="" />
+        <img className="rightbarAd" src={require("../data/Images/ad.png")} alt="" />
         <h4 className="rightbarTitle">Online Friends</h4>
         <ul className="rightbarFriendList">
           {Users.map((u) => (
